@@ -3,13 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snow Rider 3D Unblocked</title>
-    <meta name="description" content="Play Snow Rider 3D Unblocked online for free. Dodge obstacles, collect gifts, and unlock awesome sleighs in this immersive 3D winter racing game.">
-    <meta property="og:image" content="./images/snow-rider-3d-281d02.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="./images/snow-rider-3d-281d02.png">
+    <title>Privacy Policy - snowrider-3d-unblocked.github.io</title>
+    <meta name="description" content="Privacy Policy for {{siteName}}. Learn how we protect your data and ensure a safe gaming experience.">
     <link rel="icon" href="./images/favicon.png" type="image/png">
-    
+    <meta name="robots" content="noindex, nofollow">
     <script>
         const savedTheme = localStorage.getItem('theme') || 'dark';
         document.documentElement.setAttribute('data-theme', savedTheme);
@@ -129,30 +126,7 @@
 </head>
 <body>
     <header class="header" id="dynamic-header"></header>
-    <div class="container">
-    
-    <div class="game-wrapper" id="gw">
-        <div class="pre-play-box">
-            <img src="./images/snow-rider-3d-281d02.png" alt="Snow Rider 3D" class="pre-play-img">
-            <div class="pre-play-overlay"></div>
-            <div class="pre-play-content">
-                <h2 style="margin:0; color:#fff; font-size:36px; text-transform:uppercase; text-align:center; text-shadow: 0 2px 10px rgba(0,0,0,0.8); letter-spacing: 2px;">Snow Rider 3D</h2>
-                <button class="btn-play" id="playBtn">PLAY NOW</button>
-            </div>
-        </div>
-    </div>
-    <div class="action-bar">
-        <button id="fullscreen_btn" class="btn-secondary">
-            <svg viewBox="0 0 24 24" style="width:16px; height:16px; fill:currentColor;"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg>FULLSCREEN
-        </button>
-    </div>
-    
-    <div class="seo-footer">
-        <h1>Snow Rider 3D Unblocked</h1>
-        <p>Snow Rider 3D Unblocked is an epic 3D sledding game where you race down massive snowy mountains. Dodge trees, rocks, and giant snowballs while maintaining high speed to set new records. Collect gifts during your run to unlock over 10 unique sleighs in the shop. Play Snow Rider 3D Unblocked for free directly in your browser—perfect for high-speed thrills and winter adventure anytime!</p>
-    </div>
-    <div id="dynamic-grid"></div>
-</div>
+    <div class="container"><div class="text-page"><h1>Privacy Policy</h1><p>At snowrider-3d-unblocked.github.io, we prioritize the privacy of our visitors. This Privacy Policy outlines the types of information we collect and how we use it to improve your experience.</p><h2>Log Files</h2><p>snowrider-3d-unblocked.github.io follows a standard procedure of using log files to analyze trends and administer the site. This includes IP addresses, browser types, and timestamps.</p><h2>Cookies</h2><p>Like most interactive websites, snowrider-3d-unblocked.github.io uses cookies to store visitor preferences and optimize web page content based on your browser type. You can disable cookies through your individual browser settings.</p><h2>Agreement</h2><p>By using our website, you hereby consent to our Privacy Policy and agree to its terms. We ensure a secure environment for all users to enjoy unblocked games safely.</p></div></div>
     <footer class="site-footer"><a href="./privacy.html">Privacy Policy</a><a href="./dmca.html">DMCA</a></footer>
     <div id="gameModal" class="modal-overlay">
         <div class="modal-wrapper">
@@ -176,7 +150,7 @@
             const hidCats = cats.slice(maxVis);
 
             let menu = '<a href="/" class="logo">snowrider-3d-unblocked.github.io</a><div class="nav-container">';
-            visCats.forEach(c => menu += '<a href="./'+c.slug+'.html" class="nav-btn '+(c.id===''?'active':'')+'">'+c.title+'</a>');
+            visCats.forEach(c => menu += '<a href="./'+c.slug+'.html" class="nav-btn '+(c.id==='privacy'?'active':'')+'">'+c.title+'</a>');
             if(hidCats.length > 0) {
                 menu += '<div class="dropdown"><button class="drop-btn">More ▾</button><div class="dropdown-content">';
                 hidCats.forEach(c => menu += '<a href="./'+c.slug+'.html">'+c.title+'</a>');
@@ -214,11 +188,11 @@
                     return str + '</div>';
                 };
 
-                if ('home' === 'category') {
-                    let toShow = '' === 'all' ? gms : gms.filter(g => g.categoryIds.includes(''));
+                if ('page' === 'category') {
+                    let toShow = 'privacy' === 'all' ? gms : gms.filter(g => g.categoryIds.includes('privacy'));
                     html = renderCards(toShow);
                 } else {
-                    let sourceList = ('home' === 'game') ? gms.filter(g => g.id !== '') : gms;
+                    let sourceList = ('page' === 'game') ? gms.filter(g => g.id !== 'privacy') : gms;
                     let popGames = sourceList.slice(0, 28);
                     let newGames = sourceList.slice(28, 56);
                     
@@ -248,23 +222,6 @@
     }
     ['mousemove', 'scroll', 'touchstart'].forEach(evt => window.addEventListener(evt, initUI, { once: true }));
     
-
-    document.getElementById('playBtn').onclick = function() { 
-        var frameStr = '<iframe src="./frames/class-69418.html" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>';
-        if(window.innerWidth <= 768) {
-            document.getElementById('modalContent').innerHTML = frameStr; 
-            document.getElementById('gameModal').classList.add('active');
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.getElementById('gw').innerHTML = frameStr;
-            document.getElementById('gw').style.padding = '0';
-        }
-    };
-    document.getElementById('fullscreen_btn').onclick = function() {
-        let elem = document.getElementById("gw");
-        if (elem.requestFullscreen) elem.requestFullscreen();
-        else if (elem.webkitRequestFullscreen) elem.webkitRequestFullscreen();
-    };
 </script>
 </body>
 </html>

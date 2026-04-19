@@ -1,4 +1,4 @@
 User-agent: *
-Allow: /
-
-Sitemap: https://snowrider-3d-unblocked.github.io/sitemap.xml
+Disallow: /frames/
+Disallow: /category.json
+Disallow: /games.json
