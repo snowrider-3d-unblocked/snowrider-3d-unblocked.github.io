@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://snowrider-3d-unblocked.github.io/sitemap.xml
