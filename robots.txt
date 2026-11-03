@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /frames/
-Disallow: /category.json
-Disallow: /games.json
